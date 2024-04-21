@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+{%block main_block%}
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 p-4 shadow border-2">
+            <h1 class="text-center fw-bolder ">Change Todo</h1>
+            <form action="" method="post" enctype="multipart/form-data">
+                {%csrf_token%}
+                {{form.as_p}}
+
+                <button type="submit">Change</button>
+
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+{%endblock%}
